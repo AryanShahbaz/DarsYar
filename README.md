@@ -1,4 +1,7 @@
 <div align="center">
+<img width="128" height="128" alt="DarsYar" src="https://github.com/user-attachments/assets/081e45fa-51c2-47c2-a5c1-db0b97d773f0" />
+</div>
+<div align="center">
 
 # 📚 درس‌یار | DarsYar
 
