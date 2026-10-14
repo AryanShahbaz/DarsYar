@@ -1,165 +1,93 @@
-# درس‌یار | DarsYar
+<div align="center">
 
-**دستیار درسی تو · Your Study Assistant**
+# 📚 درس‌یار | DarsYar
 
-[فارسی](#فارسی) | [English](#english)
+### دستیار درسی تو | Your Study Assistant
+
+**برنامه دسکتاپ ویندوز برای مدیریت و پیگیری مطالعه**  
+**A Windows desktop application for organizing and tracking your studies**
+
+[فارسی](#فارسی) · [English](#english) · [دانلود / Download](https://github.com/AryanShahbaz/DarsYar/releases)
+
+</div>
 
 ---
 
-## فارسی
+<a id="فارسی"></a>
+## 🇮🇷 فارسی
 
-### معرفی
-**درس‌یار** یک برنامهٔ محلی برای مدیریت و پیگیری مطالعه است که هدف آن کمک به نظم‌دادن به درس‌ها و ثبت روند پیشرفت تحصیلی است.
+### درباره درس‌یار
+**درس‌یار** برنامه‌ای برای کمک به سازمان‌دهی اطلاعات درسی و پیگیری فعالیت‌های مطالعاتی است. شعار ما: **دستیار درسی تو**.
+
+### دانلود و نصب در ویندوز
+
+1. وارد صفحه [نسخه‌های منتشرشده درس‌یار (Releases)](https://github.com/AryanShahbaz/DarsYar/releases) شوید.
+2. جدیدترین نسخه مناسب ویندوز را انتخاب کنید و فایل نصب **Setup (`.exe`)** را از قسمت **Assets** دانلود کنید.
+3. فایل دانلودشده را اجرا کنید و مراحل نصب را طبق راهنمای نصب‌کننده ادامه دهید.
+4. پس از نصب، **DarsYar / درس‌یار** را از منوی Start یا میان‌بر ایجادشده (در صورت وجود) باز کنید.
+
+> **نکته:** برای استفاده از نسخه نصبی، نیازی به دانلود کد منبع، نصب Python یا اجرای دستورهای برنامه‌نویسی نیست. اگر هنوز فایلی در بخش Releases وجود ندارد، نسخه نصبی هنوز از این مسیر منتشر نشده است.
 
 ### قابلیت‌ها
-- مدیریت و سازمان‌دهی اطلاعات درسی
-- ثبت و پیگیری گزارش‌های مطالعه
-- رابط کاربری فارسی و راست‌چین (در صورت فعال بودن در نسخهٔ منتشرشده)
-- ذخیره‌سازی داده‌ها به‌صورت محلی
-- اجرای برنامه از طریق سورس پایتون یا فایل اجرایی ویندوز، بسته به فایل‌های ارائه‌شده در Release
+- سازمان‌دهی اطلاعات مرتبط با مطالعه
+- ثبت و مرور فعالیت‌ها و گزارش‌های مطالعه
+- استفاده از رابط برنامه بدون نیاز به اجرای کد منبع
 
-> قابلیت‌های دقیق ممکن است با نسخهٔ منتشرشده تفاوت داشته باشند. پیش از انتشار، این فهرست را با امکانات واقعی همان نسخه تطبیق دهید.
+*امکانات دقیق ممکن است بسته به نسخه نصب‌شده متفاوت باشد.*
 
-### پیش‌نیازها
-**برای فایل اجرایی ویندوز (EXE):** نسخهٔ ویندوز سازگار با فایل منتشرشده.
+### نکات مهم
+- قبل از به‌روزرسانی یا حذف برنامه، از اطلاعات مهم خود نسخه پشتیبان تهیه کنید.
+- فایل نصب را فقط از [صفحه رسمی Releases](https://github.com/AryanShahbaz/DarsYar/releases) دریافت کنید.
+- سازگاری با نسخه‌های مختلف ویندوز به نسخه منتشرشده بستگی دارد.
 
-**برای اجرای سورس‌کد:**
-- Python سازگار با پروژه
-- pip
-- وابستگی‌های فهرست‌شده در `requirements.txt`
+### گزارش مشکل و پیشنهاد
+اگر در دانلود، نصب یا استفاده از درس‌یار با مشکلی روبه‌رو شدید، در بخش [Issues](https://github.com/AryanShahbaz/DarsYar/issues) گزارش ثبت کنید. لطفاً نسخه برنامه، نسخه ویندوز، توضیح مشکل و در صورت امکان تصویر پیام خطا را اضافه کنید.
 
-### اجرا از سورس
-۱. مخزن را دریافت یا کلون کنید:
-
-```bash
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_FOLDER>
-```
-
-۲. محیط مجازی بسازید:
-
-```bash
-python -m venv .venv
-```
-
-در ویندوز آن را فعال کنید:
-
-```bat
-.venv\Scripts\activate
-```
-
-۳. وابستگی‌ها را نصب کنید:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-۴. اگر `START.bat` در این نسخه وجود دارد، آن را اجرا کنید. سپس آدرس محلی‌ای را که برنامه در ترمینال نشان می‌دهد در مرورگر باز کنید؛ برای نمونه ممکن است `http://127.0.0.1:8000` باشد. از آدرس و پورتی که برنامه واقعاً نمایش می‌دهد استفاده کنید.
-
-### فایل‌های Release
-در بخش **Releases**، فایل مناسب را انتخاب کنید. اگر نسخهٔ نصبی و نسخهٔ فشردهٔ قابل‌حمل هر دو ارائه شده‌اند، توضیح همان فایل را بخوانید. تا زمانی که EXE و نصاب روی یک سیستم تمیز آزمایش نشده‌اند، آن‌ها را تأییدشده فرض نکنید.
-
-### داده‌ها و حریم خصوصی
-- پیش از به‌روزرسانی یا حذف برنامه، از داده‌های مهم نسخهٔ پشتیبان تهیه کنید.
-- محل پایگاه داده به تنظیمات همان نسخه بستگی دارد.
-- رمزگذاری پایگاه داده به پیاده‌سازی و پیکربندی واقعی نسخه وابسته است؛ نصب یک کتابخانه به‌تنهایی رمزگذاری را تضمین نمی‌کند.
-- تا زمان بررسی امنیت و تنظیمات شبکه، برنامه را روی شبکهٔ عمومی در معرض دسترسی قرار ندهید.
-
-### گزارش مشکل
-برای گزارش مشکل در بخش **Issues** این موارد را بنویسید:
-- نسخهٔ برنامه و نسخهٔ ویندوز
-- مراحل بازتولید مشکل
-- پیام خطا یا تصویر آن
-- اینکه برنامه از سورس اجرا شده یا از فایل EXE
-
-### مجوز
-اگر برای پروژه مجوزی انتخاب کرده‌اید، آن را در فایل `LICENSE` درج کنید. تا زمانی که مجوزی اضافه نشده، فرض نکنید استفادهٔ مجدد یا بازتوزیع نامحدود مجاز است.
+### درباره کد منبع
+این مخزن برای **معرفی و انتشار نسخه قابل نصب درس‌یار** استفاده می‌شود. **کد منبع برنامه به‌صورت عمومی منتشر نشده است.** دانلود فایل نصب به معنی دریافت کد منبع یا اجازه بازتوزیع آن نیست.
 
 ---
 
-## English
+<a id="english"></a>
+## 🇬🇧 English
 
-### Overview
-**DarsYar** (“Your Study Assistant”) is a local study-management application intended to help users organize study information and track their learning activity.
+### About DarsYar
+**DarsYar** (*Your Study Assistant*) is a Windows application designed to help users organize study information and track their learning activities.
+
+### Download and install on Windows
+
+1. Open the official [DarsYar Releases page](https://github.com/AryanShahbaz/DarsYar/releases).
+2. Choose the latest suitable Windows release and download the **Setup (`.exe`)** installer under **Assets**.
+3. Run the downloaded installer and follow its on-screen instructions.
+4. Once installed, launch **DarsYar** from the Start menu or an available shortcut.
+
+> **Note:** You do not need the source code, Python, or developer tools to use the installer. If the Releases page has no installer asset yet, an installer has not been published there.
 
 ### Features
 - Organize study-related information
-- Record and review study reports
-- Persian, right-to-left interface (where available in the published version)
-- Local data storage
-- Run from Python source or a Windows executable, depending on the assets included in the release
+- Record and review study activities and reports
+- Use the installed application without running source code
 
-> The exact feature set may vary by release. Verify this list against the actual version before publishing.
+*Available features may vary by release.*
 
-### Requirements
-**For a Windows executable:** A Windows version compatible with the published file.
+### Important notes
+- Back up important data before upgrading or uninstalling the app.
+- Download installers only from the [official Releases page](https://github.com/AryanShahbaz/DarsYar/releases).
+- Windows compatibility depends on the published release.
 
-**For running from source:**
-- A Python version compatible with the project
-- pip
-- Dependencies listed in `requirements.txt`
+### Feedback and bug reports
+If you encounter an issue downloading, installing, or using DarsYar, please open an [Issue](https://github.com/AryanShahbaz/DarsYar/issues). Include the app version, Windows version, steps to reproduce the problem, and a screenshot of any error message if possible.
 
-### Run from source
-1. Clone or download the repository:
-
-```bash
-git clone <REPOSITORY_URL>
-cd <REPOSITORY_FOLDER>
-```
-
-2. Create a virtual environment:
-
-```bash
-python -m venv .venv
-```
-
-On Windows, activate it:
-
-```bat
-.venv\Scripts\activate
-```
-
-3. Install dependencies:
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-4. Run `START.bat` if it is included in this version. Open the local URL printed by the application in your browser. It may look like `http://127.0.0.1:8000`; use the actual address and port shown by the app.
-
-### Release downloads
-Go to **Releases** and choose the appropriate asset. If both an installer and a portable archive are provided, read the notes for each asset. Do not consider an EXE or installer verified until it has been tested on a clean Windows environment.
-
-### Data and privacy
-- Back up important data before upgrading or removing the application.
-- The database location depends on the configuration of the specific release.
-- Database encryption depends on the actual implementation and configuration. Installing an encryption library alone does not guarantee that the database is encrypted.
-- Do not expose the application to a public network until its security and network settings have been reviewed.
-
-### Bug reports
-When opening an **Issue**, include:
-- App version and Windows version
-- Steps to reproduce the problem
-- Error message or screenshot
-- Whether you ran from source or from the executable
-
-### License
-If you choose a license, add it in a `LICENSE` file. Until a license is included, do not assume that redistribution or reuse is unrestricted.
+### Source code availability
+This repository is used to **introduce DarsYar and distribute its Windows installer**. **The application's source code is not publicly available.** Downloading the installer does not grant access to the source code or permission to redistribute it.
 
 ---
 
-## قالب توضیحات ریلیز / Release notes template
+<div align="center">
 
-### فارسی
-- نسخه: `vX.Y.Z`
-- تغییرات اصلی: [تغییرات واقعی این نسخه را بنویسید]
-- رفع اشکال‌ها: [موارد واقعی]
-- فایل‌های دانلود: [نام فایل‌ها]
-- وضعیت آزمایش: [سیستم‌عامل و روش‌هایی که واقعاً آزمایش شده‌اند]
+**درس‌یار — دستیار درسی تو**  
+**DarsYar — Your Study Assistant**
 
-### English
-- Version: `vX.Y.Z`
-- Highlights: [List the actual changes in this version]
-- Bug fixes: [Actual fixes]
-- Downloads: [Asset filenames]
-- Testing status: [Operating system and scenarios actually tested]
+[GitHub Repository](https://github.com/AryanShahbaz/DarsYar) · [Releases](https://github.com/AryanShahbaz/DarsYar/releases) · [Report an Issue](https://github.com/AryanShahbaz/DarsYar/issues)
+
+</div>
